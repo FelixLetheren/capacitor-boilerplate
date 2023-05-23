@@ -1,0 +1,102 @@
+@use 'sass:color';
+
+// //// SCREEN SIZES
+// Use the mixins available in _media.
+$screen-size-phone: 46em;
+$screen-size-tablet: 58em;
+$screen-size-monitor: 64em;
+
+// //// FONT SIZES
+// $font-size-root: 16px;
+
+$font-size-xxsmall: 0.875rem;
+$font-size-xsmall: 1rem; // spec
+$font-size-small: 1.125rem; // spec
+$font-size-small-medium: 1.5rem;
+$font-size-medium: 1.875rem; // spec
+$font-size-large: 2.25rem; // spec
+$font-size-xlarge: 2.5rem;
+$font-size-xxlarge: 3.75rem;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$font-sizes: (
+  xxsmall $font-size-xxsmall,
+  xsmall $font-size-xsmall,
+  small $font-size-small,
+  smallmedium $font-size-small-medium,
+  medium $font-size-medium,
+  large $font-size-large,
+  xlarge $font-size-xlarge,
+  xxlarge $font-size-xxlarge
+);
+
+//// SPACINGS
+// Note: If you're adding to this, make sure to update the value and the array
+$spacing-xxsmall: 0.156rem;
+$spacing-xsmall: 0.3125rem;
+$spacing-small: 0.625rem;
+$spacing-medium: 1rem;
+$spacing-large: 1.875rem;
+$spacing-xlarge: 3.75rem;
+$spacing-xxlarge: 6.25rem;
+
+$spacing-sizes: (
+  xxsmall $spacing-xxsmall,
+  xsmall $spacing-xsmall,
+  small $spacing-small,
+  medium $spacing-medium,
+  large $spacing-large,
+  xlarge $spacing-xlarge,
+  xxlarge $spacing-xxlarge,
+  none 0
+);
+
+$line-height-expanded: 1.5;
+
+//// COLORS
+$white: #fff;
+$black: #000;
+
+$brand-primary: #548ddb;
+$brand-secondary: #fdb52f;
+
+$gray-base: #39434c;
+
+$gray-very-dark: color.adjust($gray-base, $lightness: -20%);
+$gray-dark: color.adjust($gray-base, $lightness: -10%);
+$gray-medium: $gray-base;
+$gray-light: color.adjust($gray-base, $lightness: 50%);
+$gray-very-light: color.adjust($gray-base, $lightness: 65%);
+
+$color-positive: #9fc546;
+$color-warning: #f78e52;
+$color-negative: #e30b17;
+$color-info: #3498d8;
+
+$colors: (
+  'positive' $color-positive,
+  'warning' $color-warning,
+  'negative' $color-negative,
+  'info' $color-info,
+  'brand-primary' $brand-primary,
+  'brand-secondary' $brand-secondary,
+  'gray-very-dark' $gray-very-dark,
+  'gray-dark' $gray-dark,
+  'gray-medium' $gray-medium,
+  'gray-light' $gray-light,
+  'gray-very-light' $gray-very-light,
+  'white' $white,
+  'black' $black
+);
+
+/// BORDERS
+
+$border-radius-large: 1rem;
+$border-radius-small: 0.5rem;
+
+/// INPUTS
+$button-min-width: 6.25rem;

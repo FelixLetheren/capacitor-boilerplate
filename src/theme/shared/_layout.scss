@@ -1,0 +1,30 @@
+html,
+body,
+#host,
+.shell {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+.shell {
+  display: grid;
+  grid-template: 'heading' auto 'main' 1fr / 1fr;
+}
+
+header {
+  background: $white;
+  padding: $spacing-small;
+
+  img {
+    height: 2.5rem;
+  }
+}
+
+.fixed-width {
+  max-width: 64rem;
+  width: 100%;
+  margin: 0 auto;
+}

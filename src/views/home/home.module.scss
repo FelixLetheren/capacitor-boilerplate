@@ -1,0 +1,9 @@
+@use '../../theme/shared/variables';
+
+// localsConvention set in vite config
+// styles.homeMessage
+.home-message {
+  color: variables.$brand-primary;
+  display: flex;
+  flex-direction: column;
+}

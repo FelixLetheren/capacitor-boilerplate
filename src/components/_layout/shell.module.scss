@@ -1,0 +1,13 @@
+@use '../../theme/shared/variables';
+
+.shell {
+  header {
+    background-color: variables.$brand-primary;
+    color: variables.$white;
+    text-align: center;
+  }
+
+  main {
+    padding: variables.$spacing-medium;
+  }
+}

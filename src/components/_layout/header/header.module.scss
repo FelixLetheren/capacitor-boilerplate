@@ -1,0 +1,7 @@
+@use '../../../theme/shared/variables';
+
+header {
+  background-color: variables.$brand-primary;
+  color: white;
+  text-align: center;
+}

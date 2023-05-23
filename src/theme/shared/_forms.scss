@@ -1,0 +1,13 @@
+input[type='text'],
+input[type='password'] {
+  border-radius: 2.5rem;
+  min-width: 187.5rem;
+  background: rgba($white, 20%);
+  border: none;
+  color: $white;
+}
+
+label {
+  margin-bottom: $spacing-xsmall;
+  display: block;
+}

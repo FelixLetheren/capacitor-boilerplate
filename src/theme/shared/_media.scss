@@ -1,0 +1,23 @@
+@mixin for-phone-only {
+  @media (max-width: $screen-size-phone) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: $screen-size-phone) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: $screen-size-tablet) {
+    @content;
+  }
+}
+
+@mixin for-monitor-up {
+  @media (min-width: $screen-size-monitor) {
+    @content;
+  }
+}

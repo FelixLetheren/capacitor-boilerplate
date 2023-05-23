@@ -1,0 +1,55 @@
+{
+  "name": "boilerplate-app",
+  "version": "0.0.1",
+  "description": "Boilerplate Capacitor Project",
+  "main": "www/app.js",
+  "scripts": {
+    "build-dev": "npm run type-check && ENV=dev vite build --mode development",
+    "start": "concurrently \"npm:type-check\" \"vite --host\" -n \"TYPE CHECK,VITE\"",
+    "type-check": "tsc -p ./tsconfig.json --noEmit --preserveWatchOutput",
+    "sync": "npm run build-dev && npx cap sync"
+  },
+  "author": "Rocketmakers",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@capacitor/android": "4.7.3",
+    "@capacitor/cli": "4.7.3",
+    "@capacitor/core": "4.7.3",
+    "@capacitor/ios": "4.7.3",
+    "autoprefixer": "10.4.14",
+    "axios": "1.3.4",
+    "classnames": "2.3.2",
+    "ip": "1.1.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fastclick": "3.0.2",
+    "react-router-dom": "6.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.21.4",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "@types/react-router-dom": "5.3.3",
+    "@vitejs/plugin-legacy": "4.0.2",
+    "babel-loader": "9.1.2",
+    "chromatic": "6.17.2",
+    "concurrently": "8.0.1",
+    "identity-obj-proxy": "3.0.0",
+    "path": "0.12.7",
+    "postcss": "8.4.21",
+    "postcss-scss": "4.0.6",
+    "rimraf": "4.4.1",
+    "sass": "1.60.0",
+    "start-server-and-test": "2.0.0",
+    "ts-node": "10.9.1",
+    "tslib": "2.5.0",
+    "typescript": "5.0.3",
+    "vite": "4.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
+  }
+}
